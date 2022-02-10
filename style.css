@@ -45,6 +45,7 @@ body {
   left: 0;
   top: 92px;
   background-image: url("assets/images/header-illsutration-mobile.png");
+  background-repeat: no-repeat;
 }
 
 .headline-title {
