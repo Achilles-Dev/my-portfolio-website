@@ -1,0 +1,149 @@
+body {
+  position: relative;
+  width: 375px;
+  height: 6715px;
+}
+
+.header {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 92px;
+  left: 0;
+  top: 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 375px;
+  height: 92px;
+  left: 0;
+  top: 0;
+}
+
+.nav a {
+  text-decoration: none;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  color: #27342e;
+  padding: 10px 12px;
+}
+
+.headline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 64px 24px;
+  position: absolute;
+  width: 375px;
+  height: 726px;
+  left: 0;
+  top: 92px;
+  background-image: url("assets/images/header-illsutration-mobile.png");
+  background-repeat: no-repeat;
+}
+
+.headline-title {
+  position: static;
+  height: 192px;
+  left: 24px;
+  top: 64px;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 58px 0;
+}
+
+.headline-title span {
+  color: #78c078;
+}
+
+.headline-description {
+  position: static;
+  width: 327px;
+  height: 164px;
+  left: 24px;
+  top: 314px;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #172b4d;
+}
+
+.headline-icons {
+  display: flex;
+  gap: 20px;
+  position: static;
+  width: 170.17px;
+  height: 20px;
+  left: 102.42px;
+  top: 536px;
+  flex-grow: 0;
+  margin: 58px 0;
+  background: #fff;
+}
+
+.headline-icons li {
+  list-style: none;
+}
+
+.headline-dropdown {
+  position: static;
+  width: 327px;
+  height: 48px;
+  left: 24px;
+  top: 614px;
+  margin: 58px 0;
+}
+
+.headline-dropdown a img {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 8px;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  left: calc(50% - 40px / 2 + 0.5px);
+  border-radius: 32px;
+}
+
+.headline-dropdown a img:hover {
+  background: #e7e2e2;
+  color: #172b4d;
+}
+
+.headline-dropdown a img:active {
+  background: #c9b5b5;
+}
+
+.headline-dropdown a img:enabled {
+  background: #e2d6d6;
+}
+
+.headline-icons li a img:hover {
+  background: #d2dae6;
+}
+
+.headline-icons li a img:active {
+  background: #dce0e6;
+}
+
+.headline-icons li a img:enabled {
+  background: #eef2f8;
+}
