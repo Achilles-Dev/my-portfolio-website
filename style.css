@@ -66,6 +66,10 @@ body {
   margin: 58px 0;
 }
 
+.headline-title span {
+  color: #78c078;
+}
+
 .headline-description {
   position: static;
   width: 327px;
@@ -83,7 +87,7 @@ body {
 
 .headline-icons {
   display: flex;
-  gap: 15px;
+  gap: 20px;
   position: static;
   width: 170.17px;
   height: 20px;
@@ -91,6 +95,10 @@ body {
   top: 536px;
   flex-grow: 0;
   margin: 58px 0;
+}
+
+.headline-icons li {
+  list-style: none;
 }
 
 .headline-dropdown {
