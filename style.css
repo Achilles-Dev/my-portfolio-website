@@ -5,6 +5,7 @@ body {
 }
 
 .header {
+  display: flex;
   position: absolute;
   width: 100%;
   height: 92px;
@@ -13,16 +14,13 @@ body {
 }
 
 .nav {
+  display: flex;
+  justify-content: space-between;
   position: absolute;
   width: 375px;
   height: 92px;
   left: 0;
   top: 0;
-}
-
-.bottom-nav {
-  display: flex;
-  justify-content: space-between;
 }
 
 .nav a {
@@ -95,6 +93,7 @@ body {
   top: 536px;
   flex-grow: 0;
   margin: 58px 0;
+  background: #fff;
 }
 
 .headline-icons li {
@@ -120,4 +119,30 @@ body {
   height: 40px;
   background: #fff;
   left: calc(50% - 40px / 2 + 0.5px);
+  border-radius: 32px;
+}
+
+.headline-dropdown a img:hover {
+  background: #e7e2e2;
+  color: #172b4d;
+}
+
+.headline-dropdown a img:active {
+  background: #c9b5b5;
+}
+
+.headline-dropdown a img:enabled {
+  background: #e2d6d6;
+}
+
+.headline-icons li a img:hover {
+  background: #d2dae6;
+}
+
+.headline-icons li a img:active {
+  background: #dce0e6;
+}
+
+.headline-icons li a img:enabled {
+  background: #eef2f8;
 }
