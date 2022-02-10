@@ -2,23 +2,22 @@ body {
   position: relative;
   width: 375px;
   height: 6715px;
- 
 }
 
 .header {
   position: absolute;
   width: 100%;
   height: 92px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
 }
 
 .nav {
   position: absolute;
   width: 375px;
   height: 92px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
 }
 
 .bottom-nav {
@@ -26,15 +25,14 @@ body {
   justify-content: space-between;
 }
 
-
 .nav a {
   text-decoration: none;
-  font-family: Inter;
+  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
   line-height: 28px;
-  color: #28352F;
+  color: #27342e;
   padding: 10px 12px;
 }
 
@@ -42,12 +40,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 726px;
   padding: 64px 24px;
   position: absolute;
   width: 375px;
   height: 726px;
-  left: 0px;
+  left: 0;
   top: 92px;
   background-image: url("assets/images/header-illsutration-mobile.png");
 }
@@ -55,10 +52,9 @@ body {
 .headline-title {
   position: static;
   height: 192px;
-  height: 192px;
   left: 24px;
   top: 64px;
-  font-family: Inter;
+  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
@@ -67,7 +63,7 @@ body {
   flex: none;
   order: 0;
   flex-grow: 0;
-  margin: 58px 0px;
+  margin: 58px 0;
 }
 
 .headline-description {
@@ -76,13 +72,13 @@ body {
   height: 164px;
   left: 24px;
   top: 314px;
-  font-family: Inter;
+  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
   line-height: 28px;
   text-align: center;
-  color: #172B4D;
+  color: #172b4d;
 }
 
 .headline-icons {
@@ -94,7 +90,7 @@ body {
   left: 102.42px;
   top: 536px;
   flex-grow: 0;
-  margin: 58px 0px;
+  margin: 58px 0;
 }
 
 .headline-dropdown {
@@ -103,7 +99,7 @@ body {
   height: 48px;
   left: 24px;
   top: 614px;
-  margin: 58px 0px;
+  margin: 58px 0;
 }
 
 .headline-dropdown a img {
@@ -111,11 +107,9 @@ body {
   flex-direction: row;
   align-items: flex-start;
   padding: 8px;
-
   position: absolute;
   width: 40px;
   height: 40px;
-  background: #FFFFFF;
-  height: 40px;
-  left: calc(50% - 40px/2 + 0.5px);
+  background: #fff;
+  left: calc(50% - 40px / 2 + 0.5px);
 }
