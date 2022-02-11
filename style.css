@@ -214,7 +214,7 @@ body {
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: repeat(6, auto);
-  justify-items: center ;
+  justify-items: center;
   padding: 4px 2px;
   width: 331px;
   height: 2972px;
