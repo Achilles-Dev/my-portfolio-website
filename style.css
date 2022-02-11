@@ -34,6 +34,8 @@ body {
   padding: 10px 12px;
 }
 
+/* Headline */
+
 .headline {
   display: flex;
   flex-direction: column;
@@ -107,7 +109,9 @@ body {
   height: 48px;
   left: 24px;
   top: 614px;
-  margin: 58px 0;
+  flex: none;
+  order: 3;
+  flex-grow: 0;
 }
 
 .headline-dropdown a img {
@@ -146,4 +150,122 @@ body {
 
 .headline-icons li a img:enabled {
   background: #eef2f8;
+}
+
+/* Headline */
+
+.works {
+  display: grid;
+  grid-template-columns: 100%;
+  padding: 64px 24px;
+  position: absolute;
+  width: 379px;
+  height: 3283px;
+  left: 0px;
+  top: 708px;
+}
+
+.works-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  position: static;
+  width: 327px;
+  height: 125px;
+  left: 26px;
+  top: calc(50% - 125px/2 - 1515px);
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 58px 0px;
+}
+
+.works-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4px 2px;
+
+  position: static;
+  width: 331px;
+  height: 2972px;
+  left: 24px;
+  top: 247px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 58px 0px;
+}
+
+.card1{
+  position: static;
+  left: 0.6%;
+  right: 0.6%;
+  top: 0.13%;
+  bottom: 83.92%;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 24px 0px;
+}
+
+.card2 {
+  position: static;
+  left: 0.6%;
+  right: 0.6%;
+  top: 16.89%;
+  bottom: 67.16%;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 24px 0px;
+}
+
+.card3 {
+  position: static;
+  left: 0.6%;
+  right: 0.6%;
+  top: 16.89%;
+  bottom: 67.16%;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 24px 0px;
+}
+
+.card4 {
+  position: static;
+  left: 0.6%;
+  right: 0.6%;
+  top: 50.4%;
+  bottom: 33.65%;
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+  margin: 24px 0px;
+}
+
+.card5 {
+  position: static;
+  left: 0.6%;
+  right: 0.6%;
+  top: 67.16%;
+  bottom: 16.89%;
+  flex: none;
+  order: 4;
+  flex-grow: 0;
+  margin: 24px 0px;
+}
+
+.card6 {
+  position: static;
+  left: 0.6%;
+  right: 0.6%;
+  top: 83.92%;
+  bottom: 0.13%;
+  flex: none;
+  order: 5;
+  flex-grow: 0;
+  margin: 24px 0px;
 }
