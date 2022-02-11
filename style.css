@@ -64,7 +64,7 @@ body {
   flex: none;
   order: 0;
   flex-grow: 0;
-  margin: 58px 0;
+  margin: 20px 0;
 }
 
 .headline-title span {
@@ -157,11 +157,12 @@ body {
 .works {
   display: grid;
   grid-template-columns: 100%;
+  justify-items: center;
   padding: 64px 24px;
   position: absolute;
   width: 379px;
   height: 3283px;
-  left: 0px;
+  left: 0;
   top: 708px;
 }
 
@@ -169,36 +170,90 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0px;
-  position: static;
+  padding: 0;
   width: 327px;
   height: 125px;
   left: 26px;
-  top: calc(50% - 125px/2 - 1515px);
+  top: calc(50% - 125px / 2 - 1515px);
   flex: none;
   order: 0;
   flex-grow: 0;
-  margin: 58px 0px;
+  margin: 62px;
+}
+
+.works-title h1 {
+  width: 327px;
+  height: 97px;
+  left: 0;
+  top: 0;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #172b4d;
+}
+
+.works-title span {
+  position: static;
+  width: 48px;
+  height: 4px;
+  left: 139.5px;
+  top: 121px;
+  background: #36b37e;
+  border-radius: 24px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 }
 
 .works-cards {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(6, auto);
+  justify-items: center ;
   padding: 4px 2px;
-
-  position: static;
   width: 331px;
   height: 2972px;
-  left: 24px;
   top: 247px;
   flex: none;
   order: 1;
   flex-grow: 0;
-  margin: 58px 0px;
+  margin: 58px 0;
+  gap: 24px;
 }
 
-.card1{
+.works-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #d0d9d4;
+  border-radius: 8px;
+}
+
+.works-card span {
+  height: 252px;
+  background: #ebf0ee;
+  border: 1px solid #d0d9d4;
+  border-radius: 8px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  position: absolute;
+  width: 327px;
+  height: 222px;
+  bottom: 0;
+  background: #fff;
+  border-radius: 8px;
+}
+
+.card1 {
   position: static;
   left: 0.6%;
   right: 0.6%;
@@ -207,7 +262,82 @@ body {
   flex: none;
   order: 0;
   flex-grow: 0;
-  margin: 24px 0px;
+  margin: 24px 0;
+}
+
+.card h2 {
+  position: static;
+  width: 295px;
+  height: 57px;
+  left: 16px;
+  top: 16px;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #3a4a42;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 16px 0;
+}
+
+.works-card ul {
+  display: flex;
+  justify-content: center;
+  height: 32px;
+  margin: 16px 0;
+  padding: 0;
+}
+
+.works-card ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  background: #ebf0ee;
+  border-radius: 4px;
+  flex: none;
+  flex-grow: 0;
+  margin: 0 8px;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #3a4a42;
+}
+
+.card a {
+  text-decoration: none;
+  display: flex;
+  padding: 12px;
+  width: 122px;
+  height: 48px;
+  justify-content: center;
+  margin-top: 20px;
+  background: #36b37f;
+  border-color: #36b37f;
+  border-radius: 4px;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
+}
+
+.card a:hover {
+  background: #36b37f;
+}
+
+.card a:active {
+  background: #008552;
 }
 
 .card2 {
@@ -219,7 +349,7 @@ body {
   flex: none;
   order: 1;
   flex-grow: 0;
-  margin: 24px 0px;
+  margin: 24px 0;
 }
 
 .card3 {
@@ -231,7 +361,7 @@ body {
   flex: none;
   order: 1;
   flex-grow: 0;
-  margin: 24px 0px;
+  margin: 24px 0;
 }
 
 .card4 {
@@ -243,7 +373,7 @@ body {
   flex: none;
   order: 3;
   flex-grow: 0;
-  margin: 24px 0px;
+  margin: 24px 0;
 }
 
 .card5 {
@@ -255,7 +385,7 @@ body {
   flex: none;
   order: 4;
   flex-grow: 0;
-  margin: 24px 0px;
+  margin: 24px 0;
 }
 
 .card6 {
@@ -267,5 +397,5 @@ body {
   flex: none;
   order: 5;
   flex-grow: 0;
-  margin: 24px 0px;
+  margin: 24px 0;
 }
