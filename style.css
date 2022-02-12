@@ -390,12 +390,17 @@ body {
   align-items: center;
   width: 327px;
   height: 352px;
-  left: 0;
   top: 753px;
   background: #ebf0ee;
   border: 1px solid #c1c7d0;
   box-sizing: border-box;
   border-radius: 8px;
+  margin: 0;
+  padding: 0;
+}
+
+.about-card li {
+  list-style: none;
 }
 
 .about-card-title {
