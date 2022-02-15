@@ -299,86 +299,7 @@ body {
   letter-spacing: 0.03em;
 }
 
-/* Works */
-
-.works {
-  display: grid;
-  grid-template-columns: 100%;
-  justify-items: center;
-  position: absolute;
-  width: 379px;
-  height: 3283px;
-  left: 0;
-  right: 0;
-  top: 708px;
-}
-
-.works-title {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0;
-  width: 327px;
-  height: 125px;
-  left: 26px;
-  margin: 64px 0 62px 0;
-}
-
-.works-title h2 {
-  width: 327px;
-  height: 97px;
-  font-family: Inter, sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 52px;
-  text-align: center;
-  color: #172b4d;
-}
-
-.works-title span {
-  position: static;
-  width: 48px;
-  height: 4px;
-  background: #36b37e;
-  border-radius: 24px;
-  flex: none;
-}
-
-.works-cards {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: repeat(6, 470px);
-  justify-items: center;
-  height: 2972px;
-  gap: 24px;
-}
-
-.works-card {
-  display: flex;
-  flex-direction: column;
-  border: 1px solid #d0d9d4;
-  border-radius: 8px;
-}
-
-.works-card span {
-  height: 252px;
-  background: #ebf0ee;
-  border: 1px solid #d0d9d4;
-  border-radius: 8px;
-}
-
-.works-card .title {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 16px 13px;
-  width: 327px;
-  height: 222px;
-  background: #fff;
-  border-radius: 8px;
-  margin: 0;
-}
+/* work -card title link */
 
 .works-card .title a {
   text-decoration: none;
@@ -399,50 +320,7 @@ body {
   color: #fff;
 }
 
-.works-card .title a:hover {
-  background: #36b37f;
-}
-
-.works-card .title a:active {
-  background: #008552;
-}
-
-.works-card .title h2 {
-  width: 295px;
-  height: 57px;
-  font-family: Inter, sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 32px;
-  text-align: center;
-  color: #3a4a42;
-  margin: 0;
-}
-
-.works-card .title ul {
-  height: 32px;
-  margin: 16px 0;
-  padding: 0;
-}
-
-.works-card .title ul li {
-  float: right;
-  list-style: none;
-  padding: 8px 12px;
-  background: #ebf0ee;
-  border-radius: 4px;
-  margin-right: 8px;
-  font-family: Inter, sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  color: #3a4a42;
-}
-
-/* contact form */
+/* footer contact form */
 
 .footer {
   display: flex;
@@ -553,7 +431,8 @@ body {
   background: #008552;
 }
 
-/* icons */
+/* footer icons */
+
 .footer .footer-icons {
   display: flex;
   list-style: none;
@@ -565,4 +444,128 @@ body {
 
 .footer .footer-icons li a {
   text-decoration: none;
+}
+
+/* Works */
+
+.works {
+  display: grid;
+  grid-template-columns: 100%;
+  justify-items: center;
+  position: absolute;
+  width: 379px;
+  height: 3283px;
+  left: 0;
+  right: 0;
+  top: 708px;
+}
+
+.works-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  width: 327px;
+  height: 125px;
+  left: 26px;
+  margin: 64px 0 62px 0;
+}
+
+.works-title h2 {
+  width: 327px;
+  height: 97px;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #172b4d;
+}
+
+.works-title span {
+  position: static;
+  width: 48px;
+  height: 4px;
+  background: #36b37e;
+  border-radius: 24px;
+  flex: none;
+}
+
+.works-cards {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(6, 470px);
+  justify-items: center;
+  height: 2972px;
+  gap: 24px;
+}
+
+.works-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #d0d9d4;
+  border-radius: 8px;
+}
+
+.works-card span {
+  height: 252px;
+  background: #ebf0ee;
+  border: 1px solid #d0d9d4;
+  border-radius: 8px;
+}
+
+.works-card .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px 13px;
+  width: 327px;
+  height: 222px;
+  background: #fff;
+  border-radius: 8px;
+  margin: 0;
+}
+
+.works-card .title a:hover {
+  background: #36b37f;
+}
+
+.works-card .title a:active {
+  background: #008552;
+}
+
+.works-card .title h2 {
+  width: 295px;
+  height: 57px;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #3a4a42;
+  margin: 0;
+}
+
+.works-card .title ul {
+  height: 32px;
+  margin: 16px 0;
+  padding: 0;
+}
+
+.works-card .title ul li {
+  float: right;
+  list-style: none;
+  padding: 8px 12px;
+  background: #ebf0ee;
+  border-radius: 4px;
+  margin-right: 8px;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #3a4a42;
 }
