@@ -455,3 +455,18 @@ body {
   left: 0px;
   top: 5483px;
 }
+
+.contact-form-text {
+  position: static;
+  width: 327px;
+  height: 363px;
+  left: 0px;
+  top: 0px;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #172B4D;
+}
