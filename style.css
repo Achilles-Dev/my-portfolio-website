@@ -452,7 +452,7 @@ body {
   position: absolute;
   width: 375px;
   height: 879px;
-  left: 0px;
+  left: 0;
   top: 5483px;
 }
 
@@ -460,18 +460,18 @@ body {
   position: static;
   width: 327px;
   height: 363px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
   line-height: 52px;
   text-align: center;
-  color: #172B4D;
+  color: #172b4d;
 }
 
-.footer .contact-form form{
+.footer .contact-form form {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -479,11 +479,11 @@ body {
   margin: 50px 0;
 }
 
-.footer .contact-form form input{
+.footer .contact-form form input {
   width: 100%;
-  background: #FFF;
+  background: #fff;
   border-radius: 4px;
-  border: 1px solid #D0D9D4;
+  border: 1px solid #d0d9d4;
   box-sizing: border-box;
   height: 48px;
   outline: none;
@@ -492,20 +492,20 @@ body {
   padding: 3px;
 }
 
-.footer .contact-form form input::placeholder{
-  font-family: Inter,sans-serif;
+.footer .contact-form form input::placeholder {
+  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
   line-height: 24px;
-  color: #6B778C;
+  color: #6b778c;
 }
 
-.footer .contact-form form textarea{
+.footer .contact-form form textarea {
   width: 100%;
   height: 114px;
-  background: #FFFFFF;
-  border: 1px solid #60C095;
+  background: #fff;
+  border: 1px solid #60c095;
   box-sizing: border-box;
   border-radius: 4px;
   margin: 10px 0;
@@ -514,29 +514,29 @@ body {
   outline: none;
 }
 
-.footer .contact-form form textarea::placeholder{
-  font-family: Inter,sans-serif;
+.footer .contact-form form textarea::placeholder {
+  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
   line-height: 24px;
-  color: #091E42;
+  color: #091e42;
 }
 
-.footer .contact-form form .get-in-touch{
+.footer .contact-form form .get-in-touch {
   width: 131px;
   height: 48px;
   margin: 24px 0;
-  background: #36B37F;
+  background: #36b37f;
   border-radius: 4px;
   border: hidden;
-  font-family: Inter,sans-serif;
+  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: #FFF;
+  color: #fff;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -545,16 +545,24 @@ body {
   cursor: pointer;
 }
 
+.footer .contact-form form .get-in-touch:hover {
+  background: #36b37f;
+}
+
+.footer .contact-form form .get-in-touch:active {
+  background: #008552;
+}
+
 /* icons */
-.footer .footer-icons{
+.footer .footer-icons {
   display: flex;
   list-style: none;
 }
 
-.footer .footer-icons li{
+.footer .footer-icons li {
   margin: 0 12px;
 }
 
-.footer .footer-icons li a{
+.footer .footer-icons li a {
   text-decoration: none;
 }
