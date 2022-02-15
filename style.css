@@ -436,6 +436,8 @@ body {
 .footer .footer-icons {
   display: flex;
   list-style: none;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer .footer-icons li {
