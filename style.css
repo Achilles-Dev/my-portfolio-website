@@ -441,3 +441,17 @@ body {
   letter-spacing: 0.03em;
   color: #3a4a42;
 }
+
+/* contact form */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 64px 24px;
+  position: absolute;
+  width: 375px;
+  height: 879px;
+  left: 0px;
+  top: 5483px;
+}
