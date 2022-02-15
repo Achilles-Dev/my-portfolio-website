@@ -185,11 +185,13 @@
       <p class="contact-form-text">
         I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
       </p>
-      <form action="#" method="POST">
-        <input type="text" name="full_name" placeholder="Full name">
-        <input type="email" name="email" placeholder="Email-address">
-        <textarea name="message" placeholder="Enter text here"></textarea>
-        <button class="get-in-touch" type="submit">Get in touch</button>
+      <form action="https://formspree.io/f/xgedkaee" method="POST">
+        <input type="text" name="full_name" placeholder="Full name" required
+        maxlength="30">
+        <input type="email" name="email" placeholder="Email-address" required>
+        <textarea name="message" placeholder="Enter text here" required
+        maxlength="500"></textarea>
+        <button type="submit" class="get-in-touch">Get in touch</button>
       </form>
     </section>
     <ul class="footer-icons">
