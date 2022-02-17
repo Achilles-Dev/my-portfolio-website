@@ -37,7 +37,6 @@ body {
 .mobile-nav {
   display: flex;
   justify-content: space-between;
-  position: absolute;
   width: 100%;
 }
 
@@ -267,6 +266,7 @@ body {
   width: 100%;
   height: 1625px;
   background: url("/assets/images/Mask-Group.svg") top -30px right no-repeat;
+  
 }
 
 @media (min-width: 992px) {
@@ -274,6 +274,7 @@ body {
     height: 808px;
     padding: 0;
     justify-items: normal;
+    border: 1px solid black;
   }
 }
 
@@ -289,8 +290,9 @@ body {
 
 @media (min-width: 992px) {
   .about-title {
-    padding: 0 100px;
+    padding: 0 200px;
     height: 240px;
+    gap: 20px;
   }
 }
 
@@ -371,6 +373,7 @@ body {
     justify-content: center;
     justify-items: normal;
     column-gap: 20px;
+    padding: 0 100px;
   }
 }
 
@@ -390,7 +393,7 @@ body {
 
 @media (min-width: 992px) {
   .about-card {
-    height: 352px;
+    height: 370px;
     width: 100%;
   }
 }
@@ -494,6 +497,7 @@ body {
     align-items: center;
     gap: 10px;
     padding: 0 20px;
+    margin: 0 100px;
   }
 }
 
@@ -720,6 +724,7 @@ body {
     justify-content: center;
     justify-items: normal;
     column-gap: 20px;
+    padding: 0 100px;
   }
 }
 
@@ -785,7 +790,11 @@ body {
 
 @media (min-width: 992px) {
   .works-card .title ul {
-    padding-left: 2px;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 42px;
+    gap: 5px;
   }
 }
 
