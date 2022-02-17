@@ -264,12 +264,17 @@ body {
   display: grid;
   grid-template-columns: 100%;
   justify-items: center;
-  position: absolute;
-  width: 375px;
+  width: 100%;
   height: 1625px;
-  top: 3927px;
-  padding-right: 10px;
-  background: url("/assets/images/Mask-Group.svg") top right no-repeat;
+  background: url("/assets/images/Mask-Group.svg") top -30px right no-repeat;
+}
+
+@media (min-width: 992px) {
+  .about {
+    height: 808px;
+    padding: 0;
+    justify-items: normal;
+  }
 }
 
 .about-title {
@@ -277,20 +282,20 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 0 10px;
-  position: static;
   width: 100%;
   height: 350px;
-  left: 12px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin-top: 64px;
   background: url("/assets/images/illustration-\ about\ me-\ mobile.png") bottom left no-repeat;
 }
 
+@media (min-width: 992px) {
+  .about-title {
+    padding: 0 100px;
+    height: 240px;
+  }
+}
+
 .about-title h2 {
-  position: static;
-  width: 351px;
+  width: 100%;
   height: 48px;
   font-family: Inter, sans-serif;
   font-style: normal;
@@ -306,7 +311,7 @@ body {
 }
 
 .about-title p {
-  position: static;
+  display: flex;
   width: 351px;
   height: 189px;
   font-family: Inter, sans-serif;
@@ -317,6 +322,13 @@ body {
   text-align: center;
   color: #42526e;
   margin: 24px 0;
+}
+
+@media (min-width: 992px) {
+  .about-title p {
+    width: 100%;
+    height: 96px;
+  }
 }
 
 .about .about-title a {
@@ -345,27 +357,42 @@ body {
   grid-template-rows: repeat(3, 33.333%);
   justify-items: center;
   padding: 1px;
-  position: static;
-  width: 327px;
+  width: 100%;
   height: 1106px;
-  left: 24px;
-  top: 455px;
+}
+
+@media (min-width: 992px) {
+  .about-cards {
+    grid-template-columns: repeat(3, 30%);
+    grid-template-rows: 100%;
+    height: 360px;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+    justify-items: normal;
+    column-gap: 20px;
+  }
 }
 
 .about-card {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   width: 327px;
   height: 352px;
-  top: 753px;
   background: #ebf0ee;
   border: 1px solid #c1c7d0;
   box-sizing: border-box;
   border-radius: 8px;
   margin: 0;
-  padding: 0;
+  padding: 30px 0;
+}
+
+@media (min-width: 992px) {
+  .about-card {
+    height: 352px;
+    width: 100%;
+  }
 }
 
 .about-card li {
@@ -377,6 +404,11 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 0;
+  gap: 20px
+}
+
+@media (min-width: 992px) {
+  
 }
 
 .about-card-title h2 {
@@ -708,6 +740,12 @@ body {
   height: 32px;
   margin: 16px 0;
   padding: 0;
+}
+
+@media (min-width: 992px) {
+  .works-card .title ul {
+    padding-left: 2px;
+  }
 }
 
 .works-card .title ul li {
