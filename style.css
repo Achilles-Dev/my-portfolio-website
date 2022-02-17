@@ -478,9 +478,10 @@ body {
   .footer {
     padding: 80px 0 0 0;
     height: auto;
-    background-image: url("/assets/icons/footer-left-frame.svg"), url("/assets/icons/footer-right-frame.svg");
-    background-position: bottom 100px left 10px, bottom 100px right 10px;
-    background-size: 100px, 100px;
+    background-image: url("/assets/icons/footer-left-frame.svg"), 
+    url("/assets/icons/footer-right-frame.svg"), url("/assets/icons/illustration-2-contact-form-desktop.svg");
+    background-position: bottom 100px left 10px, bottom 100px right 10px, bottom 100px left 500px;
+    background-size: 100px, 100px, 100px;
     background-repeat: no-repeat, no-repeat;
     gap: 200px;
   }
