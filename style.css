@@ -52,11 +52,12 @@ body {
   }
 }
 
-@keyframes rotate-logo{
-  from{
+@keyframes rotate-logo {
+  from {
     transform: rotate(0deg);
   }
-  to{
+
+  to {
     transform: rotate(360deg);
   }
 }
@@ -353,12 +354,6 @@ body {
   margin: 0;
   padding: 12px;
   transition: all 0.5s ease-in;
-} 
-
-.about .about-title a:hover {
-  background: #fff;
-  border: 1px solid #36b37f;
-  color: #36b37f;
 }
 
 .about-cards {
@@ -781,9 +776,8 @@ body {
 
 .works-card .title a:hover {
   background: #fff;
-  color: #36b37f;;
+  color: #36b37f;
   border: 1px solid #36b37f;
-  
 }
 
 .works-card .title a:active {
@@ -842,4 +836,10 @@ body {
     margin-right: 4px;
     float: none;
   }
+}
+
+.about .about-title a:hover {
+  background: #fff;
+  border: 1px solid #36b37f;
+  color: #36b37f;
 }
