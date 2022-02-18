@@ -52,6 +52,16 @@ body {
   }
 }
 
+@keyframes rotate-logo {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .mobile-nav a {
   text-decoration: none;
   font-family: Inter, sans-serif;
@@ -61,6 +71,8 @@ body {
   line-height: 28px;
   color: #27342e;
   padding: 10px 12px;
+  animation-name: rotate-logo;
+  animation-duration: 3s;
 }
 
 @media (min-width: 992px) {
@@ -327,7 +339,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 159px;
+  width: 170px;
   height: 48px;
   background: #36b37f;
   border-radius: 4px;
@@ -340,6 +352,8 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   margin: 0;
+  padding: 12px;
+  transition: all 0.5s ease-in;
 }
 
 .about-cards {
@@ -454,6 +468,7 @@ body {
   font-size: 17px;
   line-height: 24px;
   color: #fff;
+  transition: all 0.5s ease-in;
 }
 
 /* footer contact form */
@@ -573,7 +588,7 @@ body {
 }
 
 .footer .contact-form form .get-in-touch {
-  width: 131px;
+  width: 150px;
   height: 48px;
   margin: 24px 0;
   background: #36b37f;
@@ -596,13 +611,16 @@ body {
 
 @media (min-width: 992px) {
   .footer .contact-form form .get-in-touch {
-    width: 129px;
+    width: 150px;
     font-weight: 500;
   }
 }
 
 .footer .contact-form form .get-in-touch:hover {
-  background: #36b37f;
+  background: #fff;
+  font-size: 20px;
+  color: #3be69f;
+  border: 1px solid #3be69f;
 }
 
 .footer .contact-form form .get-in-touch:active {
@@ -724,6 +742,11 @@ body {
   flex-direction: column;
   border: 1px solid #d0d9d4;
   border-radius: 8px;
+  transition: all 0.5s ease-in;
+}
+
+.works-card:hover {
+  transform: scale(1.1);
 }
 
 .works-card span {
@@ -752,7 +775,9 @@ body {
 }
 
 .works-card .title a:hover {
-  background: #36b37f;
+  background: #fff;
+  color: #36b37f;
+  border: 1px solid #36b37f;
 }
 
 .works-card .title a:active {
@@ -811,4 +836,10 @@ body {
     margin-right: 4px;
     float: none;
   }
+}
+
+.about .about-title a:hover {
+  background: #fff;
+  border: 1px solid #36b37f;
+  color: #36b37f;
 }
