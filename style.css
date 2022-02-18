@@ -52,6 +52,15 @@ body {
   }
 }
 
+@keyframes rotate-logo{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+
 .mobile-nav a {
   text-decoration: none;
   font-family: Inter, sans-serif;
@@ -61,6 +70,8 @@ body {
   line-height: 28px;
   color: #27342e;
   padding: 10px 12px;
+  animation-name: rotate-logo;
+  animation-duration: 3s;
 }
 
 @media (min-width: 992px) {
