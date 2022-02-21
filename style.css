@@ -246,7 +246,7 @@ body {
   justify-items: center;
   width: 100%;
   height: 1625px;
-  background: url("/assets/images/Mask-Group.svg") top -30px right no-repeat;
+  background: url("assets/images/Mask-Group.svg") top -30px right no-repeat;
 }
 
 .about-title {
@@ -256,7 +256,7 @@ body {
   padding: 0 10px;
   width: 100%;
   height: 350px;
-  background: url("/assets/images/illustration-\ about\ me-\ mobile.png") bottom left no-repeat;
+  background: url("assets/images/illustration-\ about\ me-\ mobile.png") bottom left no-repeat;
 }
 
 .about-title h2 {
@@ -571,9 +571,9 @@ body {
     padding: 80px 0 0 0;
     height: auto;
     background-image:
-      url("/assets/icons/footer-left-frame.svg"),
-      url("/assets/icons/footer-right-frame.svg"),
-      url("/assets/icons/illustration-2-contact-form-desktop.svg");
+      url("assets/icons/footer-left-frame.svg"),
+      url("assets/icons/footer-right-frame.svg"),
+      url("assets/icons/illustration-2-contact-form-desktop.svg");
     background-position: bottom 100px left 10px, bottom 100px right 10px, bottom 100px left 500px;
     background-size: 100px, 100px, 100px;
     background-repeat: no-repeat, no-repeat;
