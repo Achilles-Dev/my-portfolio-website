@@ -33,12 +33,12 @@ To get a local copy up and running follow these simple example steps.
    npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
    ```
 
-### Usage
+### Online Version
+
+   [My Portfolio Website](https://achilles-dev.github.io/my-portfolio-website/) 
 
 
-
-
-## Authors
+## Author
 
 👤 **Solomon Hagan**
 
