@@ -16,8 +16,6 @@ closeButton.addEventListener('click', () => {
   modal.classList.remove(isVisible);
 });
 
-menuItems.forEach((menuItem) =>
-  menuItem.addEventListener('click', () => {
-    modal.classList.remove(isVisible);
-  })
-);
+menuItems.forEach((menuItem) => menuItem.addEventListener('click', () => {
+  modal.classList.remove(isVisible);
+}));

@@ -114,12 +114,9 @@ body {
   position: absolute;
   width: 134px;
   height: 5px;
-  left: calc(50% - 134px/2 - 0.5px);
+  left: calc(50% - 134px / 2 - 0.5px);
   bottom: 8px;
-
-  /* Mono/Black */
-
-  background: #0D151E;
+  background: #0d151e;
   border-radius: 10px;
 }
 
@@ -146,10 +143,6 @@ body {
   display: flex;
   align-items: center;
   color: #3a4a42;
-}
-
-.modal-content ul li {
-  list-style: none;
 }
 
 @media (min-width: 992px) {
@@ -524,6 +517,12 @@ body {
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.03em;
+}
+
+/* modal-content ul li */
+
+.modal-content ul li {
+  list-style: none;
 }
 
 /* work -card title link */
