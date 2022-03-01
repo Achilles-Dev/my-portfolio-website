@@ -75,6 +75,83 @@ body {
   animation-duration: 3s;
 }
 
+/* modal section */
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background: #e5e5e5;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.modal.is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal-content {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 34px;
+  height: 92%;
+  overflow: auto;
+  cursor: default;
+  background: #fff;
+  padding: 28px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.modal-bar {
+  position: absolute;
+  width: 134px;
+  height: 5px;
+  left: calc(50% - 134px/2 - 0.5px);
+  bottom: 8px;
+
+  /* Mono/Black */
+
+  background: #0D151E;
+  border-radius: 10px;
+}
+
+.modal-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.modal-content span {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 34px;
+  color: #67798e;
+}
+
+.modal-content ul li a {
+  text-decoration: none;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  color: #3a4a42;
+}
+
+.modal-content ul li {
+  list-style: none;
+}
+
 @media (min-width: 992px) {
   .desktop-nav ul {
     display: flex;
