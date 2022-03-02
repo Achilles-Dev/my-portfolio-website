@@ -99,4 +99,32 @@ const desktopVersionDetail = () => {
 
 }
 
+const mobileVersionDetail = () => {
+  coverImage.src = projectDetails[0].image['mobile-image'];
+  coverImage.alt = 'Portfolio Detail image';
+  h2.textContent = projectDetails[0].name;
+  projectDetails[0].technologies['mobile-list'].forEach((listItem) => {
+    let li = document.createElement('li');
+    li.textContent = listItem;
+    ul.appendChild(li);
+  });
+  liveIcon.src = projectDetails[0]['live-version-link']['link-icon'];
+  sourceIcon.src = projectDetails[0]['source-link']['link-icon'];
+  liveLink.textContent = projectDetails[0]['live-version-link']['link-text'];
+  sourceLink.textContent = projectDetails[0]['source-link']['link-text'];
+  liveLink.append(liveIcon);
+  sourceLink.append(sourceIcon)
+  liveLi.appendChild(liveLink);
+  sourceLi.appendChild(sourceLink);
+  buttonUl.appendChild(liveLi);
+  buttonUl.appendChild(sourceLi);
+  para.textContent = projectDetails[0].description;
+  div.appendChild(coverImage);
+  div.appendChild(h2);
+  div.appendChild(ul);
+  div.appendChild(para);
+  div.append(buttonUl);
+  section.appendChild(div);
+  document.body.appendChild(section);
+}
 
