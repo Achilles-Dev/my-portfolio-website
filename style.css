@@ -769,6 +769,7 @@ body {
 }
 
 .project-details .card .button-list li a {
+  text-decoration: none;
   font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: 500;
