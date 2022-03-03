@@ -128,7 +128,7 @@ body {
 /* Headline */
 
 .background {
-  background-image: url("assets/images/header-illsutration-mobile.png");
+  background-image: url('assets/images/header-illsutration-mobile.png');
   background-position: 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -141,7 +141,7 @@ body {
   width: 100%;
   gap: 24px;
   height: 726px;
-  background-image: url("assets/images/header-illsutration-mobile.png");
+  background-image: url('assets/images/header-illsutration-mobile.png');
   background-position: 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -223,7 +223,7 @@ body {
   justify-items: center;
   width: 100%;
   height: 1625px;
-  background: url("assets/images/Mask-Group.svg") top -30px right no-repeat;
+  background: url('assets/images/Mask-Group.svg') top -30px right no-repeat;
 }
 
 .about-title {
@@ -233,7 +233,8 @@ body {
   padding: 0 10px;
   width: 100%;
   height: 350px;
-  background: url("assets/images/illustration-\ about\ me-\ mobile.png") bottom left no-repeat;
+  background: url('assets/images/illustration-\ about\ me-\ mobile.png') bottom
+    left no-repeat;
 }
 
 .about-title h2 {
@@ -690,6 +691,126 @@ body {
   height: 24px;
 }
 
+* Project details mobile*/ .project-details {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #c1c7d0;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.is-closed {
+  display: none;
+  overflow: auto;
+  opacity: 0;
+}
+
+.project-details .card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 16px;
+  position: relative;
+  width: 91%;
+  height: 93vh;
+  background: #fff;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+  overflow: auto;
+}
+
+.project-details .card span {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-size: 20px;
+  padding: 5px;
+  color: #fff;
+}
+
+.project-details .card img {
+  width: 100%;
+  height: 70%;
+}
+
+.project-details .card h2 {
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+}
+
+.project-details .card .list-items {
+  display: flex;
+  height: 32px;
+  margin: 16px 0;
+  padding: 0;
+}
+
+.project-details .card .list-items li {
+  float: right;
+  list-style: none;
+  padding: 8px 12px;
+  background: #ebf0ee;
+  border-radius: 4px;
+  margin-right: 8px;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #3a4a42;
+}
+
+.project-details .card p {
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.project-details .card .button-list {
+  display: flex;
+  width: 100%;
+  gap: 12px;
+}
+
+.project-details .card .button-list li {
+  display: flex;
+  align-items: flex-start;
+  padding: 12px 16px;
+  background: #36b37f;
+  border-radius: 4px;
+}
+
+.project-details .card .button-list li a {
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+  letter-spacing: 0.03em;
+  color: #fff;
+}
+
 @media screen and (min-width: 992px) {
   body {
     width: 100%;
@@ -734,7 +855,7 @@ body {
   .background {
     width: 100%;
     height: auto;
-    background-image: url("assets/images/Header-llustration-desktop.png");
+    background-image: url('assets/images/Header-llustration-desktop.png');
     padding: 0 150px;
   }
 
@@ -743,7 +864,7 @@ body {
     margin-top: 72px;
     margin-bottom: 86px;
     width: 100%;
-    background-image: url("assets/images/Header-llustration-desktop.png");
+    background-image: url('assets/images/Header-llustration-desktop.png');
     padding: 0 150px;
   }
 
@@ -807,11 +928,11 @@ body {
   .footer {
     padding: 80px 0 0 0;
     height: auto;
-    background-image:
-      url("assets/icons/footer-left-frame.svg"),
-      url("assets/icons/footer-right-frame.svg"),
-      url("assets/icons/illustration-2-contact-form-desktop.svg");
-    background-position: bottom 100px left 10px, bottom 100px right 10px, bottom 100px left 500px;
+    background-image: url('assets/icons/footer-left-frame.svg'),
+      url('assets/icons/footer-right-frame.svg'),
+      url('assets/icons/illustration-2-contact-form-desktop.svg');
+    background-position: bottom 100px left 10px, bottom 100px right 10px,
+      bottom 100px left 500px;
     background-size: 100px, 100px, 100px;
     background-repeat: no-repeat, no-repeat;
     gap: 200px;
@@ -893,6 +1014,60 @@ body {
     margin-right: 4px;
     float: none;
   }
+  /* project-details desktop */
+  .project-details {
+    padding: 50px 100px 50px 100px;
+  }
 
-  
+  .project-details .card {
+    width: 100%;
+    height: 100%;
+  }
+
+  .project-details .card span {
+    position: unset;
+    display: flex;
+    align-self: flex-end;
+    font-size: 16px;
+    padding: 5px;
+    background: #ebecf0;
+    color: #67798e;
+    border-radius: 8px;
+  }
+
+  .project-details .card .title-buttons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 24px;
+    padding-top: 10px;
+    width: 100%;
+  }
+
+  .project-details .card h2 {
+    width: 50%;
+    font-weight: bold;
+  }
+
+  .project-details .card .title-buttons .button-list {
+    width: 50%;
+  }
+
+  .project-details .card .title-buttons .button-list li {
+    padding: 12px 12px;
+  }
+
+  .project-details .card .button-list li a {
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+    letter-spacing: 0.03em;
+    color: #fff;
+  }
 }
