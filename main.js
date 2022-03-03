@@ -178,6 +178,8 @@ const projectDetails = [
   },
 ];
 
+const aboutSection = document.querySelector('.about');
+
 const section = document.createElement('section');
 section.className = 'project-details';
 const div = document.createElement('div');
@@ -198,11 +200,17 @@ const sourceIcon = document.createElement('img');
 const para = document.createElement('p');
 const coverImage = document.createElement('img');
 const detailCloseButton = document.createElement('span');
+detailCloseButton.textContent = 'X';
 const isClosed = 'is-closed';
+const titleButtonsContainer = document.createElement('div');
+titleButtonsContainer.className = 'title-buttons';
+
+let projectWorkId = 0;
 
 const addSectionDetails = (buttonIndex) => {
   const ScreenWidth = window.matchMedia('(min-width: 992px)');
   coverImage.alt = 'Portfolio Detail image';
+  projectWorkId = buttonIndex;
   projectDetails.forEach((project) => {
     h2.textContent = project[buttonIndex].name;
     liveIcon.src = project[buttonIndex]['live-version-link']['link-icon'];
@@ -215,20 +223,17 @@ const addSectionDetails = (buttonIndex) => {
     sourceLi.appendChild(sourceLink);
     buttonUl.appendChild(liveLi);
     buttonUl.appendChild(sourceLi);
-    detailCloseButton.textContent = 'X';
     para.textContent = project[buttonIndex].description;
     let listLength = project[buttonIndex].technologies['desktop-list'].length;
     if (ScreenWidth.matches) {
       coverImage.src = project[buttonIndex].image['desktop-image'];
       project[buttonIndex].technologies['desktop-list'].forEach((listItem) => {
-        if (ul.children.length < listLength) {
+        if (ul.children.length === 0 || ul.children.length < listLength ) {
           const li = document.createElement('li');
           li.textContent = listItem;
           ul.appendChild(li);
         }
       });
-      const titleButtonsContainer = document.createElement('div');
-      titleButtonsContainer.className = 'title-buttons';
       div.appendChild(detailCloseButton);
       div.appendChild(coverImage);
       titleButtonsContainer.appendChild(h2);
@@ -236,13 +241,16 @@ const addSectionDetails = (buttonIndex) => {
       div.appendChild(titleButtonsContainer);
       div.appendChild(ul);
       div.appendChild(para);
-      section.appendChild(div);
-      document.body.appendChild(section);
     } else {
       listLength = project[buttonIndex].technologies['mobile-list'].length;
       coverImage.src = project[buttonIndex].image['mobile-image'];
       project[buttonIndex].technologies['mobile-list'].forEach((listItem) => {
-        if (ul.children.length < listLength) {
+        if (ul.children.length > listLength){
+          while (ul.firstChild){
+            ul.removeChild(ul.firstChild);
+          }
+        }
+        if (ul.children.length === 0 || ul.children.length < listLength) {
           const li = document.createElement('li');
           li.textContent = listItem;
           ul.appendChild(li);
@@ -254,9 +262,9 @@ const addSectionDetails = (buttonIndex) => {
       div.appendChild(ul);
       div.appendChild(para);
       div.append(buttonUl);
-      section.appendChild(div);
-      document.body.appendChild(section);
     }
+    section.appendChild(div);
+    document.body.insertBefore(section, aboutSection);
   });
 };
 
@@ -273,9 +281,8 @@ seeProjectButtons.forEach((seeProjectButton) => {
 });
 
 const removeSectionDetails = () => {
-  const sectionDetails = document.querySelector('.project-details');
   section.classList.remove(isClosed);
-  document.body.removeChild(sectionDetails);
+  document.body.removeChild(section);
 };
 
 detailCloseButton.addEventListener('click', () => {
@@ -283,3 +290,19 @@ detailCloseButton.addEventListener('click', () => {
   document.body.style.overflow = 'auto';
   removeSectionDetails();
 });
+
+const onWindowResize = (e) => {
+    let width = e.target.outerWidth;
+    if (width < '992' || width >= '992') {
+      if (section)
+      document.body.removeChild(section);
+      addSectionDetails(projectWorkId);
+    }
+}
+
+window.addEventListener('resize', (e) => {
+  onWindowResize(e);
+})
+
+
+

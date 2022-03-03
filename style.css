@@ -701,8 +701,8 @@ body {
 
 .project-details .card span {
   position: absolute;
-  top: 5%;
-  right: 5%;
+  top: 9%;
+  right: 7%;
   font-size: 20px;
   padding: 5px;
   color: #fff;
@@ -710,7 +710,7 @@ body {
 
 .project-details .card img {
   width: 100%;
-  height: 70%;
+  height: 100%;
 }
 
 .project-details .card h2 {
@@ -1024,7 +1024,7 @@ body {
 
   /* project-details desktop */
   .project-details {
-    padding: 50px 100px 50px 100px;
+    padding: 50px 150px 50px 150px;
   }
 
   .project-details .card {
@@ -1059,6 +1059,7 @@ body {
 
   .project-details .card .title-buttons .button-list {
     width: 50%;
+    justify-content: flex-end;
   }
 
   .project-details .card .title-buttons .button-list li {
