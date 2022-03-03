@@ -228,12 +228,12 @@ const addSectionDetails = (buttonIndex) => {
     if (ScreenWidth.matches) {
       coverImage.src = project[buttonIndex].image['desktop-image'];
       project[buttonIndex].technologies['desktop-list'].forEach((listItem) => {
-        if (ul.children.length != 0 && ul.firstChild.textContent != 'Codekit'){
-          while (ul.firstChild){
+        if (ul.children.length !== 0 && ul.firstChild.textContent !== 'Codekit') {
+          while (ul.firstChild) {
             ul.removeChild(ul.firstChild);
           }
         }
-        if (ul.children.length < listLength ) {
+        if (ul.children.length < listLength) {
           const li = document.createElement('li');
           li.textContent = listItem;
           ul.appendChild(li);
@@ -250,8 +250,8 @@ const addSectionDetails = (buttonIndex) => {
       listLength = project[buttonIndex].technologies['mobile-list'].length;
       coverImage.src = project[buttonIndex].image['mobile-image'];
       project[buttonIndex].technologies['mobile-list'].forEach((listItem) => {
-        if (ul.children.length > listLength){
-          while (ul.firstChild){
+        if (ul.children.length > listLength) {
+          while (ul.firstChild) {
             ul.removeChild(ul.firstChild);
           }
         }
@@ -297,17 +297,13 @@ detailCloseButton.addEventListener('click', () => {
 });
 
 const onWindowResize = (e) => {
-    let width = e.target.outerWidth;
-    if (width < '992' || width >= '992') {
-      if (section)
-      document.body.removeChild(section);
-      addSectionDetails(projectWorkId);
-    }
-}
+  const width = e.target.outerWidth;
+  if (width < '992' || width >= '992') {
+    if (section) document.body.removeChild(section);
+    addSectionDetails(projectWorkId);
+  }
+};
 
 window.addEventListener('resize', (e) => {
   onWindowResize(e);
-})
-
-
-
+});
