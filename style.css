@@ -233,7 +233,8 @@ body {
   padding: 0 10px;
   width: 100%;
   height: 350px;
-  background: url('assets/images/illustration-\ about\ me-\ mobile.png') bottom
+  background:
+    url('assets/images/illustration-\ about\ me-\ mobile.png') bottom
     left no-repeat;
 }
 
@@ -659,39 +660,9 @@ body {
   color: #36b37f;
 }
 
-/* headline hover, active etc styles */
+/* project-details */
 
-.headline-dropdown a img:hover {
-  background: #e7e2e2;
-  color: #172b4d;
-}
-
-.headline-dropdown a img:active {
-  background: #c9b5b5;
-}
-
-.headline-dropdown a img:enabled {
-  background: #e2d6d6;
-}
-
-.headline-icons li a img:hover {
-  background: #d2dae6;
-}
-
-.headline-icons li a img:active {
-  background: #dce0e6;
-}
-
-.headline-icons li a img:enabled {
-  background: #eef2f8;
-}
-
-.project-details .card .button-list li a img {
-  width: 24px;
-  height: 24px;
-}
-
-* Project details mobile*/ .project-details {
+.project-details {
   position: fixed;
   top: 0;
   left: 0;
@@ -811,6 +782,38 @@ body {
   color: #fff;
 }
 
+/* headline hover, active etc styles */
+
+.headline-dropdown a img:hover {
+  background: #e7e2e2;
+  color: #172b4d;
+}
+
+.headline-dropdown a img:active {
+  background: #c9b5b5;
+}
+
+.headline-dropdown a img:enabled {
+  background: #e2d6d6;
+}
+
+.headline-icons li a img:hover {
+  background: #d2dae6;
+}
+
+.headline-icons li a img:active {
+  background: #dce0e6;
+}
+
+.headline-icons li a img:enabled {
+  background: #eef2f8;
+}
+
+.project-details .card .button-list li a img {
+  width: 24px;
+  height: 24px;
+}
+
 @media screen and (min-width: 992px) {
   body {
     width: 100%;
@@ -928,10 +931,13 @@ body {
   .footer {
     padding: 80px 0 0 0;
     height: auto;
-    background-image: url('assets/icons/footer-left-frame.svg'),
+    background-image:
+      url('assets/icons/footer-left-frame.svg'),
       url('assets/icons/footer-right-frame.svg'),
       url('assets/icons/illustration-2-contact-form-desktop.svg');
-    background-position: bottom 100px left 10px, bottom 100px right 10px,
+    background-position:
+      bottom 100px left 10px,
+      bottom 100px right 10px,
       bottom 100px left 500px;
     background-size: 100px, 100px, 100px;
     background-repeat: no-repeat, no-repeat;
@@ -1014,6 +1020,7 @@ body {
     margin-right: 4px;
     float: none;
   }
+
   /* project-details desktop */
   .project-details {
     padding: 50px 100px 50px 100px;
