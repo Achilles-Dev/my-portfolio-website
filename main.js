@@ -228,7 +228,12 @@ const addSectionDetails = (buttonIndex) => {
     if (ScreenWidth.matches) {
       coverImage.src = project[buttonIndex].image['desktop-image'];
       project[buttonIndex].technologies['desktop-list'].forEach((listItem) => {
-        if (ul.children.length === 0 || ul.children.length < listLength ) {
+        if (ul.children.length != 0 && ul.firstChild.textContent != 'Codekit'){
+          while (ul.firstChild){
+            ul.removeChild(ul.firstChild);
+          }
+        }
+        if (ul.children.length < listLength ) {
           const li = document.createElement('li');
           li.textContent = listItem;
           ul.appendChild(li);
