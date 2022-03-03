@@ -312,7 +312,17 @@ window.addEventListener('resize', (e) => {
 
 
 /* Contact form email validation */
+const contactForm = document.querySelector('.contact-form form');
 
+const emailInput = contactForm.querySelector('input[name="email"]');
+
+const emailError = document.createElement('span');
+
+const inputValue = emailInput.addEventListener('change', (e) => {
+  return emailInput.value;
+});
+
+console.log(inputValue); 
 const submitButton = contactForm.querySelector('.get-in-touch');
 
 submitButton.addEventListener('click', (e) => {
