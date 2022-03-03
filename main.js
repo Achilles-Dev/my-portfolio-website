@@ -248,8 +248,8 @@ const addSectionDetails = (buttonIndex) => {
           ul.appendChild(li);
         }
       });
-      div.appendChild(detailCloseButton);
       div.appendChild(coverImage);
+      div.appendChild(detailCloseButton);
       div.appendChild(h2);
       div.appendChild(ul);
       div.appendChild(para);
