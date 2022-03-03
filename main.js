@@ -299,11 +299,29 @@ detailCloseButton.addEventListener('click', () => {
 const onWindowResize = (e) => {
   const width = e.target.outerWidth;
   if (width < '992' || width >= '992') {
-    if (section) document.body.removeChild(section);
-    addSectionDetails(projectWorkId);
+    if (section){
+      document.body.removeChild(section);
+      addSectionDetails(projectWorkId);
+    } 
   }
 };
 
 window.addEventListener('resize', (e) => {
   onWindowResize(e);
 });
+
+
+/* Contact form email validation */
+
+const submitButton = contactForm.querySelector('.get-in-touch');
+
+submitButton.addEventListener('click', (e) => {
+  e.preventDefault();
+  if (inputValue > 0 && inputValue.toLowerCase() !== inputValue){
+    //  emailError.textContent = 'Email should be in lower case';
+    //  contactForm.insertBefore(emailError, submitButton);
+    //console.log("error")
+  } else {
+    //
+  }
+})
