@@ -4,7 +4,7 @@ const menuIcon = document.querySelector('#menu-icon');
 
 const modal = document.querySelector('.modal');
 
-const closeButton = document.querySelector('.close');
+const modalCloseButton = document.querySelector('.close');
 
 const isVisible = 'is-visible';
 
@@ -14,7 +14,7 @@ menuIcon.addEventListener('click', () => {
   modal.classList.add(isVisible);
 });
 
-closeButton.addEventListener('click', () => {
+modalCloseButton.addEventListener('click', () => {
   modal.classList.remove(isVisible);
 });
 
@@ -25,32 +25,157 @@ menuItems.forEach((menuItem) => menuItem.addEventListener('click', () => {
 /* project details modal */
 const projectDetails = [
   {
-    name: 'Keeping track of hundreds of components',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.' +
-                  "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s," +
-                  'when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem' +
-                  'Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been' +
-                  "the industry's standard dummy text ever since the 1500s, when an unknown printer took a" +
-                  'galley of type and scrambled it 1960s with the relea',
-    image: {
-      'desktop-image': './assets/images/Desktop-Snapshoot-Portfolio.png',
-      'mobile-image': './assets/images/Mobile-Snapshoot-Portfolio.png',
+    1: {
+      name: 'Keeping track of hundreds of components',
+      description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
+                    + "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
+                    + 'when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem'
+                    + 'Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been'
+                    + "the industry's standard dummy text ever since the 1500s, when an unknown printer took a"
+                    + 'galley of type and scrambled it 1960s with the relea',
+      image: {
+        'desktop-image': './assets/images/Desktop-Snapshoot-Portfolio.png',
+        'mobile-image': './assets/images/5g-security-in-an-iot-architec.png',
+      },
+      technologies: {
+        'desktop-list': ['Codekit', 'Github', 'Javascript', 'Bootstrap', 'Terminal', 'Codepen'],
+        'mobile-list': ['Ruby on rails', 'css', 'Javacript'],
+      },
+      'live-version-link': {
+        'link-text': 'See Live',
+        'link-icon': './assets/icons/See-Live.svg',
+      },
+      'source-link': {
+        'link-text': 'See Source',
+        'link-icon': './assets/icons/Icon-GitHub.svg',
+      },
     },
-    technologies: {
-      'desktop-list': ['Codekit', 'Github', 'Javascript', 'Bootstrap', 'Terminal', 'Codepen'],
-      'mobile-list': ['Ruby on rails', 'css', 'Javacript'],
+    2: {
+      name: 'Project 2',
+      description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
+                    + "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
+                    + 'when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem'
+                    + 'Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been'
+                    + "the industry's standard dummy text ever since the 1500s, when an unknown printer took a"
+                    + 'galley of type and scrambled it 1960s with the relea',
+      image: {
+        'desktop-image': './assets/images/Desktop-Snapshoot-Portfolio.png',
+        'mobile-image': './assets/images/5g-security-in-an-iot-architec.png',
+      },
+      technologies: {
+        'desktop-list': ['Codekit', 'Github', 'Javascript', 'Bootstrap', 'Terminal', 'Codepen'],
+        'mobile-list': ['Ruby on rails', 'css', 'Javacript'],
+      },
+      'live-version-link': {
+        'link-text': 'See Live',
+        'link-icon': './assets/icons/See-Live.svg',
+      },
+      'source-link': {
+        'link-text': 'See Source',
+        'link-icon': './assets/icons/Icon-GitHub.svg',
+      },
     },
-    'live-version-link': {
-      'link-text': 'See Live',
-      'link-icon': './assets/icons/See-Live.svg',
+    3: {
+      name: 'Project Three',
+      description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
+                    + "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
+                    + 'when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem'
+                    + 'Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been'
+                    + "the industry's standard dummy text ever since the 1500s, when an unknown printer took a"
+                    + 'galley of type and scrambled it 1960s with the relea',
+      image: {
+        'desktop-image': './assets/images/Desktop-Snapshoot-Portfolio.png',
+        'mobile-image': './assets/images/5g-security-in-an-iot-architec.png',
+      },
+      technologies: {
+        'desktop-list': ['Codekit', 'Github', 'Javascript', 'Bootstrap', 'Terminal', 'Codepen'],
+        'mobile-list': ['Ruby on rails', 'css', 'Javacript'],
+      },
+      'live-version-link': {
+        'link-text': 'See Live',
+        'link-icon': './assets/icons/See-Live.svg',
+      },
+      'source-link': {
+        'link-text': 'See Source',
+        'link-icon': './assets/icons/Icon-GitHub.svg',
+      },
     },
-    'source-link': {
-      'link-text': 'See Source',
-      'link-icon': './assets/icons/github.svg',
-    }
-
-
-  }
+    4: {
+      name: 'Project Four',
+      description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
+                    + "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
+                    + 'when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem'
+                    + 'Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been'
+                    + "the industry's standard dummy text ever since the 1500s, when an unknown printer took a"
+                    + 'galley of type and scrambled it 1960s with the relea',
+      image: {
+        'desktop-image': './assets/images/Desktop-Snapshoot-Portfolio.png',
+        'mobile-image': './assets/images/5g-security-in-an-iot-architec.png',
+      },
+      technologies: {
+        'desktop-list': ['Codekit', 'Github', 'Javascript', 'Bootstrap', 'Terminal', 'Codepen'],
+        'mobile-list': ['Ruby on rails', 'css', 'Javacript'],
+      },
+      'live-version-link': {
+        'link-text': 'See Live',
+        'link-icon': './assets/icons/See-Live.svg',
+      },
+      'source-link': {
+        'link-text': 'See Source',
+        'link-icon': './assets/icons/Icon-GitHub.svg',
+      },
+    },
+    5: {
+      name: 'Project Five',
+      description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
+                    + "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
+                    + 'when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem'
+                    + 'Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been'
+                    + "the industry's standard dummy text ever since the 1500s, when an unknown printer took a"
+                    + 'galley of type and scrambled it 1960s with the relea',
+      image: {
+        'desktop-image': './assets/images/Desktop-Snapshoot-Portfolio.png',
+        'mobile-image': './assets/images/5g-security-in-an-iot-architec.png',
+      },
+      technologies: {
+        'desktop-list': ['Codekit', 'Github', 'Javascript', 'Bootstrap', 'Terminal', 'Codepen'],
+        'mobile-list': ['Ruby on rails', 'css', 'Javacript'],
+      },
+      'live-version-link': {
+        'link-text': 'See Live',
+        'link-icon': './assets/icons/See-Live.svg',
+      },
+      'source-link': {
+        'link-text': 'See Source',
+        'link-icon': './assets/icons/Icon-GitHub.svg',
+      },
+    },
+    6: {
+      name: 'Project Six',
+      description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
+                    + "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
+                    + 'when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem'
+                    + 'Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been'
+                    + "the industry's standard dummy text ever since the 1500s, when an unknown printer took a"
+                    + 'galley of type and scrambled it 1960s with the relea',
+      image: {
+        'desktop-image': './assets/images/Desktop-Snapshoot-Portfolio.png',
+        'mobile-image': './assets/images/5g-security-in-an-iot-architec.png',
+      },
+      technologies: {
+        'desktop-list': ['Codekit', 'Github', 'Javascript', 'Bootstrap', 'Terminal', 'Codepen'],
+        'mobile-list': ['Ruby on rails', 'css', 'Javacript'],
+      },
+      'live-version-link': {
+        'link-text': 'See Live',
+        'link-icon': './assets/icons/See-Live.svg',
+      },
+      'source-link': {
+        'link-text': 'See Source',
+        'link-icon': './assets/icons/Icon-GitHub.svg',
+      },
+    },
+  },
 ];
 
 const section = document.createElement('section');
@@ -59,7 +184,9 @@ const div = document.createElement('div');
 div.className = 'card';
 const h2 = document.createElement('h2');
 const ul = document.createElement('ul');
+ul.className = 'list-items';
 const buttonUl = document.createElement('ul');
+buttonUl.className = 'button-list';
 const liveLi = document.createElement('li');
 const sourceLi = document.createElement('li');
 const liveLink = document.createElement('a');
@@ -68,63 +195,89 @@ const liveIcon = document.createElement('img');
 const sourceIcon = document.createElement('img');
 const para = document.createElement('p');
 const coverImage = document.createElement('img');
+const detailCloseButton = document.createElement('span');
+const isClosed = 'is-closed';
 
-const desktopVersionDetail = () => {
-  coverImage.src = projectDetails[0].image['desktop-image'];
+const addSectionDetails = (buttonIndex) => {
+  const ScreenWidth = window.matchMedia('(min-width: 992px)');
   coverImage.alt = 'Portfolio Detail image';
-  h2.textContent = projectDetails[0].name;
-  projectDetails[0].technologies['desktop-list'].forEach((listItem) => {
-    let li = document.createElement('li');
-    li.textContent = listItem;
-    ul.appendChild(li);
+  projectDetails.forEach((project) => {
+    h2.textContent = project[buttonIndex].name;
+    liveIcon.src = project[buttonIndex]['live-version-link']['link-icon'];
+    sourceIcon.src = project[buttonIndex]['source-link']['link-icon'];
+    liveLink.textContent = project[buttonIndex]['live-version-link']['link-text'];
+    sourceLink.textContent = project[buttonIndex]['source-link']['link-text'];
+    liveLink.append(liveIcon);
+    sourceLink.append(sourceIcon);
+    liveLi.appendChild(liveLink);
+    sourceLi.appendChild(sourceLink);
+    buttonUl.appendChild(liveLi);
+    buttonUl.appendChild(sourceLi);
+    detailCloseButton.textContent = 'X';
+    para.textContent = project[buttonIndex].description;
+    let listLength = project[buttonIndex].technologies['desktop-list'].length;
+    if (ScreenWidth.matches) {
+      coverImage.src = project[buttonIndex].image['desktop-image'];
+      project[buttonIndex].technologies['desktop-list'].forEach((listItem) => {
+        if (ul.children.length < listLength) {
+          const li = document.createElement('li');
+          li.textContent = listItem;
+          ul.appendChild(li);
+        }
+      });
+      const titleButtonsContainer = document.createElement('div');
+      titleButtonsContainer.className = 'title-buttons';
+      div.appendChild(detailCloseButton);
+      div.appendChild(coverImage);
+      titleButtonsContainer.appendChild(h2);
+      titleButtonsContainer.appendChild(buttonUl);
+      div.appendChild(titleButtonsContainer);
+      div.appendChild(ul);
+      div.appendChild(para);
+      section.appendChild(div);
+      document.body.appendChild(section);
+    } else {
+      listLength = project[buttonIndex].technologies['mobile-list'].length;
+      coverImage.src = project[buttonIndex].image['mobile-image'];
+      project[buttonIndex].technologies['mobile-list'].forEach((listItem) => {
+        if (ul.children.length < listLength) {
+          const li = document.createElement('li');
+          li.textContent = listItem;
+          ul.appendChild(li);
+        }
+      });
+      div.appendChild(detailCloseButton);
+      div.appendChild(coverImage);
+      div.appendChild(h2);
+      div.appendChild(ul);
+      div.appendChild(para);
+      div.append(buttonUl);
+      section.appendChild(div);
+      document.body.appendChild(section);
+    }
   });
-  liveIcon.src = projectDetails[0]['live-version-link']['link-icon'];
-  sourceIcon.src = projectDetails[0]['source-link']['link-icon'];
-  liveLink.textContent = projectDetails[0]['live-version-link']['link-text'];
-  sourceLink.textContent = projectDetails[0]['source-link']['link-text'];
-  liveLink.append(liveIcon);
-  sourceLink.append(sourceIcon)
-  liveLi.appendChild(liveLink);
-  sourceLi.appendChild(sourceLink);
-  buttonUl.appendChild(liveLi);
-  buttonUl.appendChild(sourceLi);
-  para.textContent = projectDetails[0].description;
-  div.appendChild(coverImage);
-  div.appendChild(h2);
-  div.appendChild(ul);
-  div.appendChild(para);
-  div.append(buttonUl);
-  section.appendChild(div);
-  document.body.appendChild(section);
+};
 
-}
+const seeProjectButtonsNodeList = document.querySelectorAll('.project-button');
 
-const mobileVersionDetail = () => {
-  coverImage.src = projectDetails[0].image['mobile-image'];
-  coverImage.alt = 'Portfolio Detail image';
-  h2.textContent = projectDetails[0].name;
-  projectDetails[0].technologies['mobile-list'].forEach((listItem) => {
-    let li = document.createElement('li');
-    li.textContent = listItem;
-    ul.appendChild(li);
+const seeProjectButtons = Array.from(seeProjectButtonsNodeList);
+
+seeProjectButtons.forEach((seeProjectButton) => {
+  const buttonId = seeProjectButton.id;
+  seeProjectButton.addEventListener('click', () => {
+    addSectionDetails(buttonId);
+    document.body.style.overflow = 'hidden';
   });
-  liveIcon.src = projectDetails[0]['live-version-link']['link-icon'];
-  sourceIcon.src = projectDetails[0]['source-link']['link-icon'];
-  liveLink.textContent = projectDetails[0]['live-version-link']['link-text'];
-  sourceLink.textContent = projectDetails[0]['source-link']['link-text'];
-  liveLink.append(liveIcon);
-  sourceLink.append(sourceIcon)
-  liveLi.appendChild(liveLink);
-  sourceLi.appendChild(sourceLink);
-  buttonUl.appendChild(liveLi);
-  buttonUl.appendChild(sourceLi);
-  para.textContent = projectDetails[0].description;
-  div.appendChild(coverImage);
-  div.appendChild(h2);
-  div.appendChild(ul);
-  div.appendChild(para);
-  div.append(buttonUl);
-  section.appendChild(div);
-  document.body.appendChild(section);
-}
+});
 
+const removeSectionDetails = () => {
+  const sectionDetails = document.querySelector('.project-details');
+  section.classList.remove(isClosed);
+  document.body.removeChild(sectionDetails);
+};
+
+detailCloseButton.addEventListener('click', () => {
+  section.classList.add(isClosed);
+  document.body.style.overflow = 'auto';
+  removeSectionDetails();
+});
