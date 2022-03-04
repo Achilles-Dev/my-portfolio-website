@@ -336,7 +336,7 @@ const validateEmail = (inputValue, message) => {
 
 contactForm.addEventListener('submit', (event) => {
   event.preventDefault();
-  const emailInput = contactForm.elements['email'];
+  const emailInput = contactForm.elements.email;
   const validEmail = validateEmail(emailInput, EMAIL_ERROR_MESSAGE);
   if (validEmail) {
     contactForm.submit();
