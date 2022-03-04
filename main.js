@@ -315,7 +315,7 @@ const contactForm = document.querySelector('#contact-me');
 
 const EMAIL_ERROR_MESSAGE = 'Form not Submitted. Email Address must be in lowercase! Enter valid Email!';
 
-const emailMessage = (inputValue, message, type) => {
+const showErrorMessage = (inputValue, message, type) => {
   const emailMessage = inputValue.parentNode.querySelector('span');
   emailMessage.textContent = message;
   if (type === true) {
@@ -326,21 +326,17 @@ const emailMessage = (inputValue, message, type) => {
   return type;
 };
 
-const emailError = (inputValue, message) => {
-  emailMessage(inputValue, message, false);
-};
-
 const validateEmail = (inputValue, message) => {
   const email = inputValue.value.trim();
   if (email !== email.toLowerCase()) {
-    return emailError(inputValue, message);
+    return showErrorMessage(inputValue, message, false);
   }
   return true;
 };
 
 contactForm.addEventListener('submit', (event) => {
   event.preventDefault();
-  const emailInput = contactForm.elements.email;
+  const emailInput = contactForm.elements['email'];
   const validEmail = validateEmail(emailInput, EMAIL_ERROR_MESSAGE);
   if (validEmail) {
     contactForm.submit();
