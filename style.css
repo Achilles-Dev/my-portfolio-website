@@ -815,6 +815,15 @@ body {
   height: 24px;
 }
 
+input.success,
+textarea.success {
+  border-color: #198754;
+}
+
+.error {
+  color: #dc3545;
+}
+
 @media screen and (min-width: 992px) {
   body {
     width: 100%;
