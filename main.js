@@ -299,10 +299,10 @@ detailCloseButton.addEventListener('click', () => {
 const onWindowResize = (e) => {
   const width = e.target.outerWidth;
   if (width < '992' || width >= '992') {
-    if (section){
+    if (section) {
       document.body.removeChild(section);
       addSectionDetails(projectWorkId);
-    } 
+    }
   }
 };
 
@@ -310,28 +310,39 @@ window.addEventListener('resize', (e) => {
   onWindowResize(e);
 });
 
-
 /* Contact form email validation */
-const contactForm = document.querySelector('.contact-form form');
+const contactForm = document.querySelector('#contact-me');
 
-const emailInput = contactForm.querySelector('input[name="email"]');
+const EMAIL_ERROR_MESSAGE = 'Please enter your email address in lowercase (example@example.com)';
 
-const emailError = document.createElement('span');
-
-const inputValue = emailInput.addEventListener('change', (e) => {
-  return emailInput.value;
-});
-
-console.log(inputValue); 
-const submitButton = contactForm.querySelector('.get-in-touch');
-
-submitButton.addEventListener('click', (e) => {
-  e.preventDefault();
-  if (inputValue > 0 && inputValue.toLowerCase() !== inputValue){
-    //  emailError.textContent = 'Email should be in lower case';
-    //  contactForm.insertBefore(emailError, submitButton);
-    //console.log("error")
-  } else {
-    //
+const emailMessage = (inputValue, message, type) => {
+  const emailMessage = inputValue.parentNode.querySelector('span');
+  emailMessage.textContent = message;
+  if (type === true) {
+    emailMessage.className = 'success';
+  } else if (type === false) {
+    emailMessage.className = 'error';
   }
-})
+  return type;
+};
+
+const emailError = (inputValue, message) => {
+  emailMessage(inputValue, message, false);
+};
+
+const validateEmail = (inputValue, message) => {
+  const email = inputValue.value.trim();
+  if (email !== email.toLowerCase()) {
+    return emailError(inputValue, message);
+  }
+  return true;
+};
+
+contactForm.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const emailInput = contactForm.elements.email;
+  const validEmail = validateEmail(emailInput, EMAIL_ERROR_MESSAGE);
+  if (validEmail) {
+    contactForm.submit();
+  }
+});
