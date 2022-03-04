@@ -313,7 +313,7 @@ window.addEventListener('resize', (e) => {
 /* Contact form email validation */
 const contactForm = document.querySelector('#contact-me');
 
-const EMAIL_ERROR_MESSAGE = 'Please enter your email address in lowercase (example@example.com)';
+const EMAIL_ERROR_MESSAGE = 'Form not Submitted. Email Address must be in lowercase! Enter valid Email!';
 
 const emailMessage = (inputValue, message, type) => {
   const emailMessage = inputValue.parentNode.querySelector('span');
