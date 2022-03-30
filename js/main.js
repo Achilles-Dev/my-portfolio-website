@@ -26,16 +26,20 @@ menuItems.forEach((menuItem) => menuItem.addEventListener('click', () => {
 const projectDetails = [
   {
     1: {
-      name: 'To Do List',
-      description: 'A website that keeps track of activities to perform during the' 
-                    + "day and checks and deletes completed activities.",
+      name: 'Keeping track of hundreds of components',
+      description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
+                    + "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
+                    + 'when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem'
+                    + 'Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been'
+                    + "the industry's standard dummy text ever since the 1500s, when an unknown printer took a"
+                    + 'galley of type and scrambled it 1960s with the relea',
       image: {
-        'desktop-image': './assets/images/todo_with_editing.png',
-        'mobile-image': './assets/images/todo_with_completed.png',
+        'desktop-image': './assets/images/Desktop-Snapshoot-Portfolio.png',
+        'mobile-image': './assets/images/5g-security-in-an-iot-architec.png',
       },
       technologies: {
-        'desktop-list': ['HTML', 'CSS', 'JavaScript'],
-        'mobile-list': ['HTML', 'CSS', 'JavaScript'],
+        'desktop-list': ['Codekit', 'Github', 'Javascript', 'Bootstrap', 'Terminal', 'Codepen'],
+        'mobile-list': ['Ruby on rails', 'css', 'Javacript'],
       },
       'live-version-link': {
         'link-text': 'See Live',
@@ -188,9 +192,9 @@ buttonUl.className = 'button-list';
 const liveLi = document.createElement('li');
 const sourceLi = document.createElement('li');
 const liveLink = document.createElement('a');
-liveLink.href = 'https://achilles-dev.github.io/todo-list/dist';
+liveLink.href = 'https://achilles-dev.github.io/my-portfolio-website/';
 const sourceLink = document.createElement('a');
-sourceLink.href = 'https://github.com/Achilles-Dev/todo-list';
+sourceLink.href = 'https://github.com/Achilles-Dev/my-portfolio-website';
 const liveIcon = document.createElement('img');
 const sourceIcon = document.createElement('img');
 const para = document.createElement('p');
@@ -201,6 +205,7 @@ const isClosed = 'is-closed';
 const titleButtonsContainer = document.createElement('div');
 titleButtonsContainer.className = 'title-buttons';
 
+//This is changed to project number when button is clicked
 let projectWorkId = 0;
 
 const addSectionDetails = (buttonIndex) => {
@@ -224,6 +229,11 @@ const addSectionDetails = (buttonIndex) => {
     if (ScreenWidth.matches) {
       coverImage.src = project[buttonIndex].image['desktop-image'];
       project[buttonIndex].technologies['desktop-list'].forEach((listItem) => {
+        if (ul.children.length !== 0 && ul.firstChild.textContent !== 'Codekit') {
+          while (ul.firstChild) {
+            ul.removeChild(ul.firstChild);
+          }
+        }
         if (ul.children.length < listLength) {
           const li = document.createElement('li');
           li.textContent = listItem;
@@ -290,7 +300,7 @@ detailCloseButton.addEventListener('click', () => {
 const onWindowResize = (e) => {
   const width = e.target.outerWidth;
   if (width < '992' || width >= '992') {
-    if (section) {
+    if (section.firstChild) {
       document.body.removeChild(section);
       addSectionDetails(projectWorkId);
     }
@@ -299,37 +309,4 @@ const onWindowResize = (e) => {
 
 window.addEventListener('resize', (e) => {
   onWindowResize(e);
-});
-
-/* Contact form email validation */
-const contactForm = document.querySelector('#contact-me');
-
-const EMAIL_ERROR_MESSAGE = 'Form not Submitted. Email Address must be in lowercase! Enter valid Email!';
-
-const showErrorMessage = (inputValue, message, type) => {
-  const emailMessage = inputValue.parentNode.querySelector('span');
-  emailMessage.textContent = message;
-  if (type === true) {
-    emailMessage.className = 'success';
-  } else if (type === false) {
-    emailMessage.className = 'error';
-  }
-  return type;
-};
-
-const validateEmail = (inputValue, message) => {
-  const email = inputValue.value.trim();
-  if (email !== email.toLowerCase()) {
-    return showErrorMessage(inputValue, message, false);
-  }
-  return true;
-};
-
-contactForm.addEventListener('submit', (event) => {
-  event.preventDefault();
-  const emailInput = contactForm.elements.email;
-  const validEmail = validateEmail(emailInput, EMAIL_ERROR_MESSAGE);
-  if (validEmail) {
-    contactForm.submit();
-  }
 });
