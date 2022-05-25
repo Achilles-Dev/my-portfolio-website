@@ -1,4 +1,5 @@
 /* menu-icon modal  */
+import projectDetails from './js/project_details.js';
 
 const menuIcon = document.querySelector('#menu-icon');
 
@@ -23,156 +24,6 @@ menuItems.forEach((menuItem) => menuItem.addEventListener('click', () => {
 }));
 
 /* project details modal */
-const projectDetails = [
-  {
-    1: {
-      name: 'To Do List',
-      description: 'A website that keeps track of activities to perform during the' 
-                    + "day and checks and deletes completed activities.",
-      image: {
-        'desktop-image': './assets/images/todo_with_editing.png',
-        'mobile-image': './assets/images/todo_with_completed.png',
-      },
-      technologies: {
-        'desktop-list': ['HTML', 'CSS', 'JavaScript'],
-        'mobile-list': ['HTML', 'CSS', 'JavaScript'],
-      },
-      'live-version-link': {
-        'link-text': 'See Live',
-        'link-icon': './assets/icons/See-Live.svg',
-      },
-      'source-link': {
-        'link-text': 'See Source',
-        'link-icon': './assets/icons/Icon-GitHub.svg',
-      },
-    },
-    2: {
-      name: 'Project 2',
-      description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
-                    + "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
-                    + 'when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem'
-                    + 'Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been'
-                    + "the industry's standard dummy text ever since the 1500s, when an unknown printer took a"
-                    + 'galley of type and scrambled it 1960s with the relea',
-      image: {
-        'desktop-image': './assets/images/Desktop-Snapshoot-Portfolio.png',
-        'mobile-image': './assets/images/5g-security-in-an-iot-architec.png',
-      },
-      technologies: {
-        'desktop-list': ['Codekit', 'Github', 'Javascript', 'Bootstrap', 'Terminal', 'Codepen'],
-        'mobile-list': ['Ruby on rails', 'css', 'Javacript'],
-      },
-      'live-version-link': {
-        'link-text': 'See Live',
-        'link-icon': './assets/icons/See-Live.svg',
-      },
-      'source-link': {
-        'link-text': 'See Source',
-        'link-icon': './assets/icons/Icon-GitHub.svg',
-      },
-    },
-    3: {
-      name: 'Project Three',
-      description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
-                    + "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
-                    + 'when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem'
-                    + 'Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been'
-                    + "the industry's standard dummy text ever since the 1500s, when an unknown printer took a"
-                    + 'galley of type and scrambled it 1960s with the relea',
-      image: {
-        'desktop-image': './assets/images/Desktop-Snapshoot-Portfolio.png',
-        'mobile-image': './assets/images/5g-security-in-an-iot-architec.png',
-      },
-      technologies: {
-        'desktop-list': ['Codekit', 'Github', 'Javascript', 'Bootstrap', 'Terminal', 'Codepen'],
-        'mobile-list': ['Ruby on rails', 'css', 'Javacript'],
-      },
-      'live-version-link': {
-        'link-text': 'See Live',
-        'link-icon': './assets/icons/See-Live.svg',
-      },
-      'source-link': {
-        'link-text': 'See Source',
-        'link-icon': './assets/icons/Icon-GitHub.svg',
-      },
-    },
-    4: {
-      name: 'Project Four',
-      description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
-                    + "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
-                    + 'when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem'
-                    + 'Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been'
-                    + "the industry's standard dummy text ever since the 1500s, when an unknown printer took a"
-                    + 'galley of type and scrambled it 1960s with the relea',
-      image: {
-        'desktop-image': './assets/images/Desktop-Snapshoot-Portfolio.png',
-        'mobile-image': './assets/images/5g-security-in-an-iot-architec.png',
-      },
-      technologies: {
-        'desktop-list': ['Codekit', 'Github', 'Javascript', 'Bootstrap', 'Terminal', 'Codepen'],
-        'mobile-list': ['Ruby on rails', 'css', 'Javacript'],
-      },
-      'live-version-link': {
-        'link-text': 'See Live',
-        'link-icon': './assets/icons/See-Live.svg',
-      },
-      'source-link': {
-        'link-text': 'See Source',
-        'link-icon': './assets/icons/Icon-GitHub.svg',
-      },
-    },
-    5: {
-      name: 'Project Five',
-      description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
-                    + "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
-                    + 'when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem'
-                    + 'Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been'
-                    + "the industry's standard dummy text ever since the 1500s, when an unknown printer took a"
-                    + 'galley of type and scrambled it 1960s with the relea',
-      image: {
-        'desktop-image': './assets/images/Desktop-Snapshoot-Portfolio.png',
-        'mobile-image': './assets/images/5g-security-in-an-iot-architec.png',
-      },
-      technologies: {
-        'desktop-list': ['Codekit', 'Github', 'Javascript', 'Bootstrap', 'Terminal', 'Codepen'],
-        'mobile-list': ['Ruby on rails', 'css', 'Javacript'],
-      },
-      'live-version-link': {
-        'link-text': 'See Live',
-        'link-icon': './assets/icons/See-Live.svg',
-      },
-      'source-link': {
-        'link-text': 'See Source',
-        'link-icon': './assets/icons/Icon-GitHub.svg',
-      },
-    },
-    6: {
-      name: 'Project Six',
-      description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
-                    + "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
-                    + 'when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem'
-                    + 'Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been'
-                    + "the industry's standard dummy text ever since the 1500s, when an unknown printer took a"
-                    + 'galley of type and scrambled it 1960s with the relea',
-      image: {
-        'desktop-image': './assets/images/Desktop-Snapshoot-Portfolio.png',
-        'mobile-image': './assets/images/5g-security-in-an-iot-architec.png',
-      },
-      technologies: {
-        'desktop-list': ['Codekit', 'Github', 'Javascript', 'Bootstrap', 'Terminal', 'Codepen'],
-        'mobile-list': ['Ruby on rails', 'css', 'Javacript'],
-      },
-      'live-version-link': {
-        'link-text': 'See Live',
-        'link-icon': './assets/icons/See-Live.svg',
-      },
-      'source-link': {
-        'link-text': 'See Source',
-        'link-icon': './assets/icons/Icon-GitHub.svg',
-      },
-    },
-  },
-];
 
 const aboutSection = document.querySelector('.about');
 
@@ -220,10 +71,10 @@ const addSectionDetails = (buttonIndex) => {
     buttonUl.appendChild(liveLi);
     buttonUl.appendChild(sourceLi);
     para.textContent = project[buttonIndex].description;
-    let listLength = project[buttonIndex].technologies['desktop-list'].length;
+    let listLength = project[buttonIndex].technologies.length;
     if (ScreenWidth.matches) {
-      coverImage.src = project[buttonIndex].image['desktop-image'];
-      project[buttonIndex].technologies['desktop-list'].forEach((listItem) => {
+      coverImage.src = project[buttonIndex].image;
+      project[buttonIndex].technologies.forEach((listItem) => {
         if (ul.children.length < listLength) {
           const li = document.createElement('li');
           li.textContent = listItem;
@@ -238,9 +89,9 @@ const addSectionDetails = (buttonIndex) => {
       div.appendChild(ul);
       div.appendChild(para);
     } else {
-      listLength = project[buttonIndex].technologies['mobile-list'].length;
-      coverImage.src = project[buttonIndex].image['mobile-image'];
-      project[buttonIndex].technologies['mobile-list'].forEach((listItem) => {
+      listLength = project[buttonIndex].technologies.length;
+      coverImage.src = project[buttonIndex].image;
+      project[buttonIndex].technologies.forEach((listItem) => {
         if (ul.children.length > listLength) {
           while (ul.firstChild) {
             ul.removeChild(ul.firstChild);
