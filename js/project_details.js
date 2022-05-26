@@ -16,8 +16,8 @@ const projectDetails = [
                     + 'day and checks and deletes completed activities.',
       image: './assets/images/todo_with_editing.png',
       technologies: ['HTML', 'CSS', 'JavaScript'],
-      'live-version-link': liveVersionLink,
-      'source-link': sourceLink,
+      'live-version-link': {...liveVersionLink, 'link-href': 'https://achilles-dev.github.io/todo-list/dist/'},
+      'source-link': {...sourceLink, 'source-href': 'https://github.com/Achilles-Dev/todo-list/'},
     },
     2: {
       name: 'Covid19 Data App',
@@ -27,24 +27,20 @@ const projectDetails = [
                     for the statistics for each region/state if available.`,
       image: './assets/images/Desktop-Snapshoot-Portfolio.png',
       technologies: ['React', 'Redux', 'CSS'],
-      'live-version-link': liveVersionLink,
-      'source-link': sourceLink,
+      'live-version-link': {...liveVersionLink, 'link-href': 'https://admirable-capybara-a0122b.netlify.app/'},
+      'source-link': {...sourceLink, 'source-href': 'https://github.com/Achilles-Dev/covid19-data-app'},
+
     },
     3: {
-      name: 'Project Three',
-      description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
-                    + "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
-                    + 'when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem'
-                    + 'Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been'
-                    + "the industry's standard dummy text ever since the 1500s, when an unknown printer took a"
-                    + 'galley of type and scrambled it 1960s with the relea',
+      name: 'Bookstore App',
+      description: `This apllication contains a list of books with their completion stages.`,
       image: './assets/images/Desktop-Snapshoot-Portfolio.png',
-      technologies: ['Codekit', 'Github', 'Javascript', 'Bootstrap', 'Terminal', 'Codepen'],
-      'live-version-link': liveVersionLink,
-      'source-link': sourceLink,
+      technologies: ['React', 'Redux', 'CSS'],
+      'live-version-link': {...liveVersionLink, 'link-href': 'https://precious-druid-b78dac.netlify.app/'},
+      'source-link': {...sourceLink, 'source-href': 'https://github.com/Achilles-Dev/bookstore-app'},
     },
     4: {
-      name: 'Project Four',
+      name: 'Leaderboard App',
       description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
                     + "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
                     + 'when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem'
@@ -52,22 +48,20 @@ const projectDetails = [
                     + "the industry's standard dummy text ever since the 1500s, when an unknown printer took a"
                     + 'galley of type and scrambled it 1960s with the relea',
       image: './assets/images/Desktop-Snapshoot-Portfolio.png',
-      technologies: ['Codekit', 'Github', 'Javascript', 'Bootstrap', 'Terminal', 'Codepen'],
-      'live-version-link': liveVersionLink,
-      'source-link': sourceLink,
+      technologies: ['React', 'Redux', 'CSS'],
+      'live-version-link': {...liveVersionLink, 'link-href': 'https://achilles-dev.github.io/Leaderboard-list-app/dist'},
+      'source-link': {...sourceLink, 'source-href': 'https://github.com/Achilles-Dev/bookstore-app'},
     },
     5: {
-      name: 'Project Five',
-      description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
-                    + "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
-                    + 'when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem'
-                    + 'Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been'
-                    + "the industry's standard dummy text ever since the 1500s, when an unknown printer took a"
-                    + 'galley of type and scrambled it 1960s with the relea',
+      name: 'Math Magicians App',
+      description: `Math magicians" is a website for all fans of mathematics. 
+                    It is a Single Page App (SPA) that allows users to: <br />
+                    - make simple calculations and <br />
+                    - read a random math-related quote.`,
       image: './assets/images/Desktop-Snapshoot-Portfolio.png',
-      technologies: ['Codekit', 'Github', 'Javascript', 'Bootstrap', 'Terminal', 'Codepen'],
-      'live-version-link': liveVersionLink,
-      'source-link': sourceLink,
+      technologies: ['React', 'CSS'],
+      'live-version-link': {...liveVersionLink, 'link-href': 'https://joyful-dolphin-85efd9.netlify.app/'},
+      'source-link': {...sourceLink, 'source-href': 'https://github.com/Achilles-Dev/math-magicians-app'},
     },
     6: {
       name: 'Project Six',
