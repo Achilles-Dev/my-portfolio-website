@@ -64,17 +64,14 @@ const projectDetails = [
       'source-link': { ...sourceLink, 'source-href': 'https://github.com/Achilles-Dev/math-magicians-app' },
     },
     6: {
-      name: 'Project Six',
-      description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
-                    + "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
-                    + 'when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem'
-                    + 'Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been'
-                    + "the industry's standard dummy text ever since the 1500s, when an unknown printer took a"
-                    + 'galley of type and scrambled it 1960s with the relea',
+      name: 'PraisyDram Concert',
+      description: `The website is based on a yearly concert of Praises and Drama aimed at
+                    Evangelizing to the people of God. It is organised by Catholic students in KNUST and
+                    it's popularly known as PRAISYDRAM`,
       image: './assets/images/Desktop-Snapshoot-Portfolio.png',
-      technologies: ['Codekit', 'Github', 'Javascript', 'Bootstrap', 'Terminal', 'Codepen'],
-      'live-version-link': liveVersionLink,
-      'source-link': sourceLink,
+      technologies: ['JavaScript', 'HTML', 'CSS'],
+      'live-version-link': { ...liveVersionLink, 'link-href': 'https://achilles-dev.github.io/HTML-CSS-JavaScript-capstone-project/' },
+      'source-link': { ...sourceLink, 'source-href': 'https://github.com/Achilles-Dev/HTML-CSS-JavaScript-capstone-project' },
     },
   },
 ];
