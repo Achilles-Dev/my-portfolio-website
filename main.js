@@ -63,7 +63,7 @@ const addSectionDetails = (buttonIndex) => {
     liveLink.textContent = project[buttonIndex]['live-version-link']['link-text'];
     liveLink.href = project[buttonIndex]['live-version-link']['link-href'];
     sourceLink.textContent = project[buttonIndex]['source-link']['link-text'];
-    sourceLink.href = project[buttonIndex]['live-version-link']['source-href'];
+    sourceLink.href = project[buttonIndex]['source-link']['source-href'];
     liveLink.append(liveIcon);
     sourceLink.append(sourceIcon);
     liveLi.appendChild(liveLink);
