@@ -20,15 +20,15 @@ const projectDetails = [
       'source-link': { ...sourceLink, 'source-href': 'https://github.com/Achilles-Dev/todo-list/' },
     },
     2: {
-      name: 'Covid19 Data App',
-      description: `This is a mobile web application to check the data on the 
-                    total covid19  confirmed cases and deaths, check data for all 
-                    countries with recorded cases. It also has a details page to check 
-                    for the statistics for each region/state if available.`,
+      name: 'Money Manager',
+      description: `The Money Manager is a mobile web application
+                    where you can manage your budget: you have a list 
+                    of transactions associated with a category, so that 
+                    you can see how much money you spent for that category and on what.`,
       image: './assets/images/Desktop-Snapshoot-Portfolio.png',
       technologies: ['React', 'Redux', 'CSS'],
-      'live-version-link': { ...liveVersionLink, 'link-href': 'https://admirable-capybara-a0122b.netlify.app/' },
-      'source-link': { ...sourceLink, 'source-href': 'https://github.com/Achilles-Dev/covid19-data-app' },
+      'live-version-link': { ...liveVersionLink, 'link-href': 'https://money-manager-achilles.herokuapp.com/' },
+      'source-link': { ...sourceLink, 'source-href': 'https://github.com/Achilles-Dev/budget-app' },
 
     },
     3: {
@@ -40,17 +40,14 @@ const projectDetails = [
       'source-link': { ...sourceLink, 'source-href': 'https://github.com/Achilles-Dev/bookstore-app' },
     },
     4: {
-      name: 'Leaderboard App',
-      description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
-                    + "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
-                    + 'when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem'
-                    + 'Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been'
-                    + "the industry's standard dummy text ever since the 1500s, when an unknown printer took a"
-                    + 'galley of type and scrambled it 1960s with the relea',
+      name: 'Motorcycle-booking-service',
+      description: `Book-an-appointment is based on an app
+                    to book an appointment to try a motorcycle.
+                    Front-end: https://github.com/AyoubMs/book-an-appointment-front-end`,
       image: './assets/images/Desktop-Snapshoot-Portfolio.png',
-      technologies: ['React', 'Redux', 'CSS'],
-      'live-version-link': { ...liveVersionLink, 'link-href': 'https://achilles-dev.github.io/Leaderboard-list-app/dist' },
-      'source-link': { ...sourceLink, 'source-href': 'https://github.com/Achilles-Dev/bookstore-app' },
+      technologies: ['React', 'Redux', 'CSS', 'Bootstrap'],
+      'live-version-link': { ...liveVersionLink, 'link-href': 'https://preeminent-vacherin-1e2f8e.netlify.app/' },
+      'source-link': { ...sourceLink, 'source-href': 'https://github.com/Achilles-Dev/book-an-appointment-front-end' },
     },
     5: {
       name: 'Math Magicians App',
