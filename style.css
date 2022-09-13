@@ -575,6 +575,7 @@ body {
   justify-items: center;
   height: 2972px;
   row-gap: 24px;
+  width: 100%;
 }
 
 .works-card {
@@ -583,6 +584,7 @@ body {
   border: 1px solid #d0d9d4;
   border-radius: 8px;
   transition: all 0.5s ease-in;
+  width: 100%;
 }
 
 .works-card:hover {
@@ -602,7 +604,7 @@ body {
   align-items: center;
   padding: 16px 13px;
   width: 100%;
-  height: 222px;
+  height: fit-content;
   background: #fff;
   border-radius: 8px;
   margin: 0;
@@ -633,9 +635,12 @@ body {
 
 .works-card .title ul {
   display: flex;
-  height: 32px;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
   margin: 16px 0;
   padding: 0;
+  width: 100%;
 }
 
 .works-card .title ul li {
