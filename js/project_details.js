@@ -12,12 +12,12 @@ const projectDetails = [
   {
     1: {
       name: 'To Do List',
-      description: 'A website that keeps track of activities to perform during the'
+      description: 'A mobile view website that keeps track of activities to perform during the'
                     + 'day and checks and deletes completed activities.',
-      image: './assets/images/todo_with_editing.png',
-      technologies: ['HTML', 'CSS', 'JavaScript'],
-      'live-version-link': { ...liveVersionLink, 'link-href': 'https://achilles-dev.github.io/todo-list/dist/' },
-      'source-link': { ...sourceLink, 'source-href': 'https://github.com/Achilles-Dev/todo-list/' },
+      image: './assets/images/react-todo.png',
+      technologies: ['HTML', 'CSS', 'React'],
+      'live-version-link': { ...liveVersionLink, 'link-href': 'https://achilles-dev.github.io/react-todo-app/' },
+      'source-link': { ...sourceLink, 'source-href': 'https://github.com/Achilles-Dev/react-todo-app/' },
     },
     2: {
       name: 'Money Manager',
